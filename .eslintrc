@@ -1,0 +1,53 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "plugin:prettier/recommended",
+        "prettier/react",
+        "prettier/standard"
+    ],
+    "plugins": [
+        "prettier",
+        "react-native"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/prop-types": 0,
+        "import/imports-first": [
+            "error",
+            "absolute-first"
+        ],
+        "import/newline-after-import": "error",
+        "import/prefer-default-export": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react-native/no-unused-styles": 0,
+        "react-native/no-inline-styles": 0
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true,
+        "fetch": true
+    },
+    "env": {
+        "react-native/react-native": true
+    }
+}
